@@ -1,7 +1,7 @@
 {
   "name"         : "word_game",
   "version"      : "0.0.0",
-  "description"  : "Word Game (beta)",
+  "description"  : "Word Game",
   "main"         : "server.js",
   "author"       : "adolfoEVA01",
   "dependencies" : {
