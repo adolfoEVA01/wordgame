@@ -1,0 +1,58 @@
+/* Styles go here */
+body {
+	font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+	font-size:100%; 
+	background-color:#FFF;
+	background-image:url(https://www.flickr.com/photos/46908204@N08/16144345867/in/photostream/lightbox/);
+	background-image:url(images/magicWord.jpg);
+	background-repeat:no-repeat;
+	background-position:50% 0%; 
+}
+
+#masthead  
+{
+    background:#000000;
+    background:rgba(255, 255, 255, 0.2);
+}
+
+#guessContainer   
+{
+	padding-top: 35px;
+	margin: 20px auto;
+}
+
+span
+{
+	font-size:14px;
+}
+
+#head
+{
+	color:#CC0012;
+	font-family:"Times New Roman", Times, serif;
+	background-color:#FFF;
+	padding:3px;
+}
+
+th, td, tr {
+	border: 1px solid black;
+	font-size:14px;
+	height:2em;
+	width:12em;
+	text-align:center;
+}
+
+footer	{
+	background: rgba(0,128,128,.2);
+	font-size:14px;
+	text-align:center;
+}
+
+p {
+	font-size:14px;
+}
+
+ul	{
+	font-size: 14px;
+	list-style-position: inside;
+}

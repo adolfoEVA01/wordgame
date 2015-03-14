@@ -1,0 +1,46 @@
+<div ng-controller="wordController">
+<div class="row row-centered">
+	<div class="col-xs-2 col-centered"></div>
+	<div class="col-xs-4 col-centered">
+		<div class="" id="guessEntry">
+			<p align="center">
+            	<input  class="form-control" value="" type="text" id="guestGuess" placeholder="Enter Guess" ng-model="guestGuess"/>
+				<span class="" id="guessStatus"></span>
+			</p>
+		</div>
+    </div>
+	<div class="col-xs-4 col-centered">
+		<p align="center">
+			<custom-button></custom-button>
+		</p>
+	</div>
+	<div class="col-xs-2 col-centered"></div>
+</div>
+<div class="row row-centered">
+	<div class="col-md-offset-2 col-md-4 col-centered">
+    	<h4 align="center" style="text-emphasis:accent">Your guesses so far are: </h4>
+    	<p align="center" ng-repeat="words in guesses">
+        	{{words}}
+		</p>
+	</div>
+	<div class="col-md-4 col-centered">
+    	<p align="center" >You have guessed:<b>{{guessed}}</b> times out {{allowed}} chances.</p>
+    	<p align="center" >You have <b>{{allowed - guessed}}</b> guesses left.</p>
+	</div>
+	<div class="col-xs-2 col-centered"></div>
+</div>
+<div class="row row-centered"><div class="col-xs-12 col-centered"><br /><br /></div></div>
+<div class="row row-centered">
+	<div class="col-xs-3 col-centered"></div>
+	<div class="col-xs-2 col-centered">
+		<h5 align="center" style="text-emphasis:accent">Please enter your name: </h5>
+	</div>
+	<div class="col-xs-2 col-centered">
+		<input class="form-control" value "" type="text" id="userName" placeholder="Name" ng-model="scoreData.userName"/>
+	</div>
+	<div class="col-xs-2 col-centered">
+		<button type="submit" class="btn btn-primary" ng-click="createScore()">Submit Score</button>
+	</div>
+	<div class="col-xs-3 col-centered"></div>
+</div>
+</div>

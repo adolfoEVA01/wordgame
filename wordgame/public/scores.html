@@ -1,0 +1,31 @@
+<div ng-controller="wordController" ng-init="getScores()">
+<div class="row row-centered">
+	<div class="col-xs-3 col-centered"></div>
+	<div class="col-xs-6 col-centered">
+		<h2 id="masthead" align="center">Scores for {{gameTitle}}</h2>
+	</div>
+	<div class="col-xs-3 col-centered"></div>
+</div>
+<div class="row row-centered">
+	<div class="col-xs-3 col-centered"></div>
+	<div class="col-xs-6 col-centered">
+    	<div id="guessEntry">
+			<table>
+				<tr><td colspan = "4">GAME TABLE</td></tr>
+				<tr>
+					<td>PLAYER NAME</td>
+					<td>NUMBER OF ATTEMPTS</td>
+					<td>CHECK TO DELETE</td>
+				</tr>
+				<tr id="winnerTable" ng-repeat="score in scores">
+					    <td>{{score.userName}}</td>
+						<td>{{score.attempts}}</td>
+						<td>
+							<input type="checkbox" ng-click="deleteScore(score._id)">
+						</td>
+				</tr>
+			</table>
+		</div>
+    </div>
+	<div class="col-xs-3 col-centered"></div>
+</div>
