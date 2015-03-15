@@ -1,0 +1,8 @@
+# It contains the list of files or types of files that would be ignored
+tempfile.txt
+!wordgame/*.txt
+.DS_Store
+*.zip
+*.gz
+log/*.log
+log/*log.[0-9]
